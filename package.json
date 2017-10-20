@@ -1,0 +1,24 @@
+{
+  "name": "mojblog",
+  "version": "1.0.0",
+  "description": "Vezba",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ancibananci/mojblog.git"
+  },
+  "author": "Ana Djukic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ancibananci/mojblog/issues"
+  },
+  "homepage": "https://github.com/ancibananci/mojblog#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
