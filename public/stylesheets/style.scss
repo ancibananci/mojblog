@@ -1,0 +1,136 @@
+$backgroundColor:#590059;
+$navBG: url("images/pozadina.png");
+$menuFontHover: #cc99ff;
+
+
+
+body, html{
+	width:100%;
+	box-sizing:border-box;
+	margin:0px;
+	font-size: 16px;
+	background: $backgroundColor
+}
+
+/****************************************HEADER*************************************/
+header {
+	position:fixed;
+	top: 0px;
+	width:100%;
+	background: $navBG;
+	background-size: cover;
+	height: 100px;
+	margin: 0px;
+	z-index:5;
+}
+
+#logo{
+	float:left;
+	height: 70px;
+	width: 70px;
+	margin: 15px 0 15px 50px;
+	display: inline-block;
+	background:url("images/ankh.png") no-repeat center;
+	background-size: contain;
+	background-repeat: none;
+}
+
+.navigation{ margin-top: 0px;
+	padding: 30px 0;
+	float:right;
+	& a{
+		font-size: 1.5em;
+		text-decoration: none;
+		color: white;
+		padding-right: 10px;
+		&:hover{
+			color: $menuFontHover;
+		}
+		&:last-child{
+			margin-top: 40px;
+			margin-right:45px;
+			font-size: 2em;
+		}	
+}
+}
+
+.navigationRES{ 
+	float:right;
+	overflow:hidden;
+	background:black;
+	margin-top:100px;
+	& a{
+		text-align:center;
+		display:block;
+		font-size: 1.4em;
+		text-decoration: none;
+		color: white;
+		padding-right:40px;
+		&:hover{
+			color: $menuFontHover;
+		}
+		&:last-child{
+			display: block;
+			position:absolute;
+			top: 30px;
+			right: 15px;
+			font-size: 2em;		}	
+	}
+}
+
+#slider img{
+	width: 100%; 
+	height: 450px;
+	position: fixed;
+	top:100px; }
+
+#slider{
+	list-style-type:none; 
+	margin: 0px; 
+	padding-left:0;
+	position: relative;}
+
+h2{z-index: 4; 
+	position: absolute; 
+	left:35%; 
+	top:150px; 
+	color: white; 
+	text-shadow: 3px 5px #3a4351, 5px 7px #c5cbd6 }
+
+/*************************************END OF HEADER********************************/
+footer{
+	width:100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height:50px;
+	background: black;
+	text-align:center;
+	color:white;
+}
+
+/************************************MEDIA QUERIES*********************************/
+
+@media(max-width: 551px){
+	ul a:last-child{
+		visibility: visible;
+	}
+	.navigation .menuLG{
+		display: none;
+	}
+}
+
+@media(min-width: 552px){
+	ul a:last-child{
+		visibility: hidden;
+	}
+
+}
+
+@media(max-width: 240px){
+	.navigationRES a{
+		padding-right:5px;
+	}
+
+}
+
